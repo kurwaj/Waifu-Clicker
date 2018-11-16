@@ -5,6 +5,10 @@ html, body{
     font-family: simplefont;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: simplefont;
     src: url(simplefont.otf);
@@ -34,7 +38,6 @@ html, body{
     max-height: 100px;
     height: 100px;
     margin-top: 20px;
-    display: block;
     font-size: 25px;
     text-align: center;
     color: dimgray;
@@ -50,7 +53,7 @@ html, body{
 #scorebutton{
     background-color: crimson;
     height: 100%;
-    min-width: 80px;
+    min-width: 100px;
     width: 20%;
     float: left;
     display: block;
@@ -82,6 +85,7 @@ html, body{
     float: right;
     display: block;
 }
+
 
 #waifus{
     height: 100%;
@@ -136,11 +140,93 @@ html, body{
 }
 
 
+@media screen and (max-width: 800px){  
+    
+    
+    #score{
+        max-height: 100px;
+        height: 100px;
+        margin-top: 20px;
+        font-size: 4vw;
+        text-align: center;
+        color: dimgray;
+    }
+    
+    #scoreright{
+        height: 100%;
+        width: 25vw;
+        float: right;
+        display: block;
+    }
+    
+    #scorebutton{
+        background-color: crimson;
+        height: 100%;
+        min-width: 100px;
+        width: 25vw;
+        float: left;
+        display: block;
+        border-radius: 20px;
+        color: whitesmoke;
+        margin-left: 5vw;
+    }
+
+    #scoreleft{
+        height: 100%;
+        width: 25vw;
+        float: left;
+        display: block;
+    }
+
+    
+    #waifus{
+        height: 100%;
+        width: 80%;
+        float: left;
+        margin-left: 20%;
+        margin-top: 0;
+        text-align: center;
+        font-size: 4vw;
+        color: dimgrey;
+    }
+    
+    .waifuleft, .waifuright{
+        width: 100%;
+        margin-top: 30%;
+        float: left;
+    }
+  
+    
+    .waifuright img, .waifuleft img{
+         float: left;
+    }
+    
+
+    .descriptionleft, .descriptionright{
+        width: 70%;
+        height: 100%;
+        margin-top: -40%;
+        float: right;
+    }
+    
+    #waifus img{
+        width: 40%;
+        border-radius: 20px;
+        background-color: white;
+    }
+}
+
 #pusher{
     width: 40vw;
     height: 3vw;
     margin-top: 20px;
     float: right;
+}
+
+@media screen and (max-width: 600px){
+    #pusher{
+        height: 20vh;
+    }    
 }
 
 .footer{

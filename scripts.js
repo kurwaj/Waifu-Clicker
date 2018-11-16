@@ -19,7 +19,7 @@ function waifu(a){
             alert("Not enough money!");       
 }
 
-    setInterval(function moneyPerSecond(){
+setInterval(function moneyPerSecond(){
     money = money + moneyPassive;      
     }, 1000);    
 
@@ -29,20 +29,20 @@ function waifu(a){
    }, 10);
 
 
-   setInterval(function scoreDisplay(){
+setInterval(function scoreDisplay(){
         document.querySelector("#scoreleft").innerHTML = "Waifu Score: " + score;
    }, 10);
 
 
 setInterval(function levelButtonColor(){
-if(score >= 100){
+        if(score >= 100000){
     document.querySelector('#levelbutton').style.backgroundColor = "green";
     document.querySelector('#levelbutton').style.cursor = "pointer";}
- }, 10);
+    }, 10);
 
 
 function levelUp(){
-    if (score >= 100){
+    if (score >= 100000){
         moneyPassive = moneyPassive + 5000;
         document.querySelector('#levelbutton').style.display = "none";}
     else{
